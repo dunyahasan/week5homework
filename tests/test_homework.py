@@ -3,13 +3,11 @@
 
 from fun import homework
 
-
 def test_greatest_number():
     """Quick test to see if you can find the largest number in a list."""
     assert homework.find_greatest_number([1, 2, 3, 4, 5, 6, 7, 8]) == 8
-    assert homework.find_greatest_number([7, 3, 21, 4, 1, 6]) == 21
-
-
+    assert homework.find_greatest_number([7, 3, 21, 4, 1, 6]) == 21 
+    
 def test_least_number():
     """Quick test to see if you can find the smallest number in a list."""
     assert homework.find_least_number([1, 2, 3, 4, 5, 6, 7, 8]) == 1
@@ -29,5 +27,5 @@ def test_key_with_the_longest_value():
     (
         homework.longest_value_key({"dog": "cat", "a": "asdfasdfasdfasdfasdf"}) == "a"
     )
-    assert homework.longest_value_key({}) is None
-    assert homework.longest_value_key(None) is None
+    assert homework.longest_value_key({}) == 0
+    assert homework.longest_value_key(None) == 0
